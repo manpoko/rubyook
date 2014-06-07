@@ -1,4 +1,3 @@
-require_relative 'memory_array'
 #!/usr/bin/env ruby
 #
 # Ook! language interpreter - http://www.dangermouse.net/esoteric/ook.html
@@ -9,6 +8,8 @@ require_relative 'memory_array'
 # Ook.run 'Ook. Ook! Ook! Ook? Ook! Ook. Ook! Ook! Ook? Ook!'
 #
 # As a program: ook file.ook [-v]
+
+require_relative 'memory_array'
 
 class Ook
   VERSION = '0.1.3'

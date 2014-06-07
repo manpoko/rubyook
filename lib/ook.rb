@@ -31,7 +31,7 @@ class Ook
     else
       @efd.send(print, "#{msg}") if @verbose and msg
     end
-      
+
     @verbose
   end
 
@@ -154,7 +154,7 @@ class Ook
   rescue NoMethodError  # happens when last instruction is an end loop
     ''
   end
-  
+
   def print_memory
     text = []
     @mem.array.each_with_index do |item, index|
@@ -164,9 +164,9 @@ class Ook
       value << "]" if index == @mem.pointer
       text << value
     end
-    
+
     "\t[#{text.join(', ')}]"
-    
+
   end
 end
 
